@@ -9,9 +9,15 @@
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
+    <h1><!-- TODO: Lomake-sivun H1 -->
+      Lomake
+    </h1>
     <nav aria-label="Päävalikko">
       <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+        <a href="./index.html">Etusivu</a>
+        <a href="./table.html">Taulukko</a>
+        <a href="./form.html">Lomake</a>
+        <a href="./image.html">Kuva</a>
     </nav>
   </header>
   <main>
@@ -21,9 +27,24 @@
          - method ja action attribuutit
          - submit-painike
     -->
+    <form action="#" method="post">
+      <label for="name">Nimi:</label><br>
+      <input type="text" id="name" name="name" required /><br>
+
+      <label for="email">Sähköposti:</label><br>
+      <input type="email" id="email" name="email" required /><br>
+
+      <label for="age">Ikä:</label><br>
+      <input type="number" id="age" name="age" min="0" max="120" required /><br>
+
+      <label fpr="paikkakunta">Paikkakunta:</label><br>
+      <input type="text" id="paikkakunta" name="paikkakunta" required /><br>
+
+      <input type="submit" value="Lähetä" />
   </main>
   <footer>
     <!-- TODO: Footer -->
+    <p>&copy; 2025 Niklas Kämäräinen</p>
   </footer>
 </body>
 </html>
